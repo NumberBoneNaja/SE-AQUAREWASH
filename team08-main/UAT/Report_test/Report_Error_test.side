@@ -1,0 +1,98 @@
+{
+  "id": "5d436a35-1361-4f56-ab5d-25a1f90291b3",
+  "version": "2.0",
+  "name": "Report",
+  "url": "http://localhost:5173/report",
+  "tests": [{
+    "id": "56f9df30-6729-4b27-95d2-561667b07ce0",
+    "name": "report",
+    "commands": [{
+      "id": "fae48d68-1b35-4ef8-b697-28129637a815",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:5173/report",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f5f363df-fd6d-4e72-aed4-3441e85e42a1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "01db4aac-6f75-4680-a4de-4c887de19a1d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-card:nth-child(2) img",
+      "targets": [
+        ["css=.ant-card:nth-child(2) img", "css:finder"],
+        ["xpath=(//img[@alt='เครื่องซักผ้า'])[2]", "xpath:img"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/img", "xpath:idRelative"],
+        ["xpath=//div[2]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b6ba573-77ff-4435-9c82-03d99ac36726",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-input",
+      "targets": [
+        ["css=.ant-input", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/form/div/div/div[2]/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f68516f-de7a-4383-bc32-f7dceb962b99",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ant-btn-default",
+      "targets": [
+        ["css=.ant-btn-default", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/form/div[2]/div/div[2]/div/div/span/div/span/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'อัปโหลดรูปภาพ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "72a5768d-2284-44d4-ac81-1fbd40945f5b",
+      "comment": "",
+      "command": "type",
+      "target": "css=input[type=file]",
+      "targets": [],
+      "value": "C:\\Users\\User\\Downloads\\aquawash\\team08\\frontend\\src\\assets\\washerTest.jpg"
+    }, {
+      "id": "b3f8553e-dabd-44e5-89d6-7b861da12114",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-btn-primary",
+      "targets": [
+        ["css=.ant-btn-primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'ส่งรายงาน')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "820dd9ce-76cb-46b2-8579-8c35842ec476",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.message-error",
+      "targets": [],
+      "value": "กรุณากรอกรายละเอียดปัญหา"
+    }]
+  }],
+  "suites": [{
+    "id": "be2050f3-108a-4941-9797-fef1987c78c7",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["56f9df30-6729-4b27-95d2-561667b07ce0"]
+  }],
+  "urls": ["http://localhost:5173/report"],
+  "plugins": []
+}

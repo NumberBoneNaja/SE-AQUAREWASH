@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Parkinsans:wght@300..800&display=swap');
+
+
+.JobContenner{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-family: "Parkinsans", sans-serif;
+    background-color: #92cad9;
+    color: #fff;
+    
+}
+.InfoJobPreview{
+    margin-left: 100px;
+}
+.InfoJobPreview h1{
+    font-weight: 800;
+    font-size: 40px;
+}
+.PreviewJob {
+    font-size: 26px;
+    text-align: center;
+    font-family: "PT Serif", serif;
+    line-height: 40px;
+    overflow-y: scroll;
+    height: 100px;
+}
+
+.PreviewJob h1{
+    animation: blur linear both;
+    animation-timeline: view();
+}
+@keyframes blur {
+    0%{
+        filter: blur(10px);
+    }40%{
+        filter: blur(0px);
+    }55%{
+        filter: blur(0px);
+    }100%{
+        filter: blur(10px);
+    }
+}
+
+.NEWS {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.NEWS span{
+    width: 500px;
+    height: 3px;
+    background-color: #92cad9;
+    margin-left: 150px;
+    margin-right: 150px;
+
+}
+
+.BoxJob{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+    animation: BoxJob 1s ease-in-out;
+}
+@keyframes BoxJob {
+    0%{
+        transform: translateY(-140px);
+        opacity: 0;
+    }100%{
+
+    }
+}
+
+.BoxJobC{
+    width: 250px;
+    height: 300px;
+    background-color: #e8d19600;
+    margin: 0px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #00000010;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.15s;
+} 
+.BoxJobC img{
+    margin: 20px;
+}
+.BoxJobC p{
+    font-family: "Parkinsans", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+.BoxJobC:hover{
+    background-color: #d2f2fb;
+    transform: translateY(-35px);
+}
+
+.MemberA {
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Parkinsans", sans-serif;
+    animation: show ;
+    animation-timeline: view(70% auto);
+}
+.infoA{
+    width: 800px;
+    margin: 0 40px;
+}
+@keyframes show {
+    from{
+        opacity: 0;
+        transform: translateX(-300px) scale(0.8);
+    }to{
+        opacity: 1;
+    }
+}
+
+
+
+.MemberB {
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Parkinsans", sans-serif;
+    animation: showB ;
+    animation-timeline: view(70% auto);
+}
+.infoB{
+    width: 800px;
+    margin: 0 40px;
+}
+@keyframes showB {
+    from{
+        opacity: 0;
+        transform: translateX(300px) scale(0.8);
+    }to{
+        opacity: 1;
+    }
+}
+
+.backB{
+    position: fixed;
+    background-color: #0000002c;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0;
+    backdrop-filter: blur(2px);
+    z-index: 1010;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+
+}
+.backB.Open{
+    visibility: visible;
+    animation: BB 0.8s ease-in-out  forwards;
+}
+.backB.Close{
+    visibility: hidden;
+    animation: BBout 0.2s ease-in-out reverse ;
+
+}
+@keyframes BB {
+    0%{
+        opacity: 0;
+    }
+}
+@keyframes BBout {
+    0%{
+        opacity: 0;
+    }
+}
+
+.Information {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 500px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00000034;
+    z-index: 1020;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+@keyframes Information {
+    0%{
+        opacity: 0;
+        transform: translate(-50%, 100%) scale(0.5);
+    }
+}
+@keyframes Informationout {
+    0%{
+        opacity: 0;
+        transform: translate(-50%, 100%) scale(0.5);
+    }
+}
+.Information.Open{
+    visibility: visible;
+    animation: Information 0.5s ease-in-out  forwards;
+}
+.Information.Close{
+    visibility: hidden;
+    animation: Informationout 0.5s ease-in-out  reverse;
+    
+}
+.Information h1{
+    text-align: center;
+    font-family: "PT Serif", serif;
+    color: #c2a14f;
+}
+.Informationsub{
+    height: auto;
+}
+.datauser{
+    width: 90%;
+    height: 110px;
+    background-color: #ffffff;
+    margin: 0 5%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #bbbbbb62;
+    border-right: 10px solid #c2a14f;
+    display: flex;
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    font-family: "Parkinsans", sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 10px;
+}
+.datauser img{
+    border-radius: 50%;
+    margin-left: 10px;
+    box-shadow: 2px 3px 5px #00000034;
+}
+.Status{
+    position: absolute;
+    right: 100px;
+    background-color: #dfc78c;
+    padding: 10px;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 700;
+}
+.SubmitBB{
+    text-align: center;
+    margin: 40px 35%;
+    background-color: #c2a14f;
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: "Parkinsans", sans-serif;
+    color: #fff;
+    font-weight: 600;
+}
+.SubmitBB.Open{
+    opacity: 1;
+    cursor: pointer;
+}
+.SubmitBB.Close{
+    opacity: 0.2;
+    pointer-events: none;
+}

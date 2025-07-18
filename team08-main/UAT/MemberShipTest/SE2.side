@@ -1,0 +1,146 @@
+{
+  "id": "20858e78-cbc5-4500-a981-41047079c6ee",
+  "version": "2.0",
+  "name": "SE2",
+  "url": "http://localhost:5173/MainPack",
+  "tests": [{
+    "id": "4fb835f1-14d8-4b07-b9ca-edcd938a29ad",
+    "name": "TestSuccess",
+    "commands": [{
+      "id": "80b21ac6-9f3f-4b5d-bb7d-2e3392b74b89",
+      "comment": "",
+      "command": "open",
+      "target": "/MainPack",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5945ba04-1793-4925-ba1f-36da3b8824c2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x880",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "655bba50-6af0-4296-ba50-a542ba5c44dd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.package-card:nth-child(1)",
+      "targets": [
+        ["css=.package-card:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eba6f9c1-ed34-411d-92a6-79e87ed31f49",
+      "comment": "",
+      "command": "click",
+      "target": "id=paymentMethod",
+      "targets": [
+        ["id=paymentMethod", "id"],
+        ["css=#paymentMethod", "css:finder"],
+        ["xpath=//input[@id='paymentMethod']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[4]/div/form/div[2]/div/div[2]/div/div/div/div/span/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "60198ddb-2b0f-4950-9222-6a0612ea3c5c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-select-item-option-active > .ant-select-item-option-content",
+      "targets": [
+        ["css=.ant-select-item-option-active > .ant-select-item-option-content", "css:finder"],
+        ["xpath=//div[2]/div/div/div/div[4]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9aa9fdc-d79a-44b2-82fb-950843f84dcf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-btn > span",
+      "targets": [
+        ["css=.ant-btn > span", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[4]/div/form/div[3]/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Confirm Payment')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "18ac0181-6d06-423d-8315-c2b3c25cab75",
+    "name": "failTest",
+    "commands": [{
+      "id": "a1774575-3ce9-4028-955f-93e99c1663b7",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:5173/MainPack",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4c25aa86-8635-44d2-8eba-f989cf54ac21",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x864",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4c142c67-9e95-47e8-9e79-c8bd997afe18",
+      "comment": "",
+      "command": "click",
+      "target": "css=.package-card:nth-child(2)",
+      "targets": [
+        ["css=.package-card:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eda95890-a58d-40e5-b608-218aff071d7c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-btn > span",
+      "targets": [
+        ["css=.ant-btn > span", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[4]/div/form/div[3]/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Confirm Payment')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4577311d-dd80-4f30-bc4b-d5c32908d094",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ant-btn > span",
+      "targets": [
+        ["css=.ant-btn > span", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[4]/div/form/div[3]/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Confirm Payment')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5255ada5-3a7c-4e72-a4f5-02599908351e",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.ant-btn > span",
+      "targets": [
+        ["css=.ant-btn > span", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[4]/div/form/div[3]/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Confirm Payment')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "bcfcbd11-7b43-410d-ab96-0c0cf54a8bc0",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["4fb835f1-14d8-4b07-b9ca-edcd938a29ad"]
+  }],
+  "urls": ["http://localhost:5173/", "http://localhost:5173/MainPack"],
+  "plugins": []
+}

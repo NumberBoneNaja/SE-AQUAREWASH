@@ -1,0 +1,567 @@
+/* General Styles */
+  .header{
+      color: #ffffff;
+      background-color: #ffffff;
+      width: 100vw; /* กำหนดความกว้างของฟุตเตอร์ให้เต็มหน้าจอ */
+      display: flex; /* ใช้ flexbox เพื่อจัดตำแหน่ง */
+      flex-direction: column; /* จัดให้ทุกอย่างอยู่ในแนวตั้ง */
+      align-items: center; /* จัดให้อยู่กลางในแนวนอน */
+      justify-content: center; /* จัดให้อยู่กลางในแนวตั้ง */
+      text-align: center; /* จัดข้อความในฟุตเตอร์ให้กึ่งกลาง */;
+      
+  }
+
+  .main-pack {
+    background-color: #d5eeff; /* สีพื้นหลังเข้ม */
+    color: #e0e0e0; /* สีตัวอักษร */
+    height: 100vh; /* ความสูงเต็มหน้าจอ */
+    
+  }
+  
+  .header-section {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff; /* White text to contrast with background */
+    
+  }
+  
+  .header-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+     /* Responsive text handling */
+     overflow: hidden;
+     text-overflow: ellipsis;
+     display: -webkit-box;
+     -webkit-line-clamp: 2; /* Limit to 2 lines */
+     -webkit-box-orient: vertical;
+     word-wrap: break-word;
+}
+
+.header-subtitle {
+    font-size: 18px;
+    color: #ddd;
+     /* Responsive text handling */
+     overflow: hidden;
+     text-overflow: ellipsis;
+     display: -webkit-box;
+   
+     -webkit-box-orient: vertical;
+     word-wrap: break-word;
+}
+
+@media screen and (max-width: 1200px) {
+    .header-title, 
+    .header-subtitle {
+      font-size: 12px; /* Smaller on mobile */
+      -webkit-line-clamp: 1; /* Reduce to 1 line */
+      width: 100%;
+        
+        
+
+    }
+}
+  
+  /* Package Container */
+  .package-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px; /* Adjusted gap for spacing between cards */
+    height: 400px; /* Adjusted height for spacing between cards */
+  }
+  
+  .package-card {
+    width: 100%; /* Full width on smaller screens */
+    max-width: 190px; /* Maximum width constraint */
+    max-height: 220px;
+    height: 220px; /* Allow height to adapt */
+    aspect-ratio: 220 / 300; /* Maintain proportional sizing */
+    margin: 10px; /* Center card, add spacing */
+  }
+  
+  @media (max-width: 1200px) {
+    .package-card {
+      width: 20%; /* Wider on mobile */
+      height: 45%; /* Allow height to adapt */
+      max-width: 150px; /* Slightly larger on smaller screens */
+      transform: scale(1); /* Disable hover scale on mobile */
+    }
+  
+    .package-card:hover {
+      transform: scale(1); /* Prevent unintended scaling */
+    }
+  }
+  
+  /* Optional: Improve touch interactions */
+  @media (pointer: coarse) {
+    .package-card {
+      transition: none; /* Smoother mobile interaction */
+    }
+  }
+  
+  .package-card:active {
+    animation: clickEffect 0.3s ease-out;
+  }
+  
+  @keyframes clickEffect {
+    0% {
+      transform: scale(0.9);
+    }
+    50% {
+      transform: scale(0.8);
+    }
+    100% {
+      transform: scale(0.7);
+    }
+  }
+  
+  /* Card Image */
+  .card-image img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+  }
+  
+  /* Card Info */
+  .card-info {
+    padding: 15px;
+    text-align: center;
+    
+
+  }
+  
+  .package-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+   
+    border-bottom: 1px solid #9d9d9d;
+     /* เส้นขั้น */
+   
+  }
+  @media screen and (max-width: 1200px) {
+    .package-name  {
+      font-size: 12px; /* Smaller on mobile */
+      
+        
+        
+
+    }
+  }
+  
+  .package-price {
+    font-size: 16px;
+    color: #000000;
+  }
+  @media screen and (max-width: 1200px) {
+    .package-price  {
+      font-size: 14px; /* Smaller on mobile */
+      
+        
+        
+
+    }
+  }
+  
+  .package-duration,
+.package-description {
+    font-size: 14px;
+    color: #838383;
+    
+    /* Responsive text handling */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limit to 2 lines */
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+    .package-duration,
+    .package-description {
+        font-size: 12px; /* Smaller on mobile */
+        -webkit-line-clamp: 1; /* Reduce to 1 line */
+    }
+}
+  
+  /* No Packages Message */
+  .no-packages {
+    text-align: center;
+    font-size: 22px;
+    color: #000000;
+  }
+
+  /* Modal Styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+    max-width: 90%;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.3s ease;
+  }
+  
+  .modal-content h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .modal-content p {
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .close-button:hover {
+    color: #999;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .payment-section, .qr-section, .upload-section, .buttons-section {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .payment-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .payment-option {
+    padding: 10px 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .payment-option.selected {
+    border-color: #4caf50;
+    background-color: #e8f5e9;
+  }
+  
+  .qr-section img {
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+  }
+  
+  .upload-label {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .upload-label:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .buttons-section button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .accept-button {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .submit-button {
+    background-color: #2196f3;
+    color: white;
+  }
+  
+  .submit-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .package-card.selected {
+    border: 3px solid rgb(0, 120, 200);
+  }
+
+  
+  
+  .fade-in {
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Header */
+  .header-title {
+    color: #3591f3; /* สีฟ้า */
+    font-size: 36px;
+    font-weight: bold;
+  
+  }
+  
+  .header-subtitle {
+    color: #6ea9e9;
+    font-size: 18px;
+    
+    
+  }
+  
+  /* Package Card */
+  .package-card {
+    background-color: #e4f0ff; /* สีพื้นหลังของแพ็คเกจ */
+    transition: transform 0.4s ease, background-color 0.3s ease;
+    border-radius: 20px;
+    border: #8fb2ff 2px solid; 
+    box-shadow: #000000;
+    /* border-image: linear-gradient(to right, #ff7878, #7bb9ff,#d080ed) 5; */
+    padding: 5px; /* เพิ่มระยะห่างภายในกรอบ */
+    
+  }
+  
+  .package-card:hover {
+    transform: scale(1.1);
+    background-color: #a1a1a1; /* สี hover */
+    box-shadow: 0 8px 20px rgba(22, 84, 255, 0.3);
+  }
+  
+  /* Payment Option */
+  .payment-option {
+    background-color: #292929;
+    color: #b0b0b0;
+    border: 2px solid #444;
+  }
+  
+  .payment-option.selected {
+    background-color: #0a0029;
+    color: #fff;
+  }
+  
+  /* ปุ่ม */
+  /* button {
+    background-color: #1e88e5;
+    color: #fff;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #1565c0;
+    transform: scale(1.05);
+  } */
+
+  .upload-container {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* ระยะห่างระหว่างไอคอนและรูปพรีวิว */
+  }
+  
+  .preview-container {
+    animation: fadeInPreview 3s ease;
+  }
+  
+  @keyframes fadeInPreview {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .upload-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border: 2px dashed #ddd;
+    border-radius: 10px;
+    color: #aaa;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .upload-button:hover {
+    border-color: #4caf50;
+    color: #4caf50;
+  }
+  
+  .preview-container {
+    margin-top: 10px;
+  }
+  
+  .preview-image {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .popup-close:hover {
+    color: red;
+  }
+
+  /* ฟุตเตอร์ */
+  .footer {
+    color: #ffffff;
+    background-color: #24292E;
+    width: 100%;
+    max-height: 190px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    /* New responsive positioning */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000; /* Ensure it's above other content */
+    
+   
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 15px;
+        min-height: 150px;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* กำหนดสไตล์ทั่วไปสำหรับลิงก์ไอคอน */
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit; /* ใช้สีจากคลาสเฉพาะ */
+  margin-right: 20px;
+  transition: color 0.3s ease; /* ทำให้การเปลี่ยนแปลงสีค่อยๆ นุ่มนวล */
+}
+
+.social-icon i,
+.social-icon svg {
+  margin-right: 8px; /* ระยะห่างระหว่างไอคอนและข้อความ */
+  font-size: 2rem; /* ขนาดของไอคอน */
+}
+
+/* กำหนดสีสำหรับแต่ละไอคอน */
+.social-icon.facebook {
+  color: #3e83dc; /* สีฟ้าสำหรับ Facebook */
+}
+
+.social-icon.github {
+  color: #6d6d6d; /* สีเทาสำหรับ GitHub */
+}
+
+.social-icon.email {
+  color: #960000; /* สีแดงสำหรับ Email */
+}
+
+/* Hover effect */
+.social-icon:hover {
+  color: #004991; /* เปลี่ยนสีเมื่อ hover เป็นสีฟ้า */
+}
+
+.social-icon:hover i,
+.social-icon:hover svg {
+  transform: scale(1.2); /* ขยายขนาดไอคอนเมื่อ hover */
+  transition: transform 0.3s ease; /* เพิ่ม transition ให้การขยายขนาดไอคอนนุ่มนวล */
+}
+
+/* เพิ่มระยะห่างระหว่าง <p> และไอคอน */
+.footer p {
+  margin-top: 20px; /* เพิ่มระยะห่างจากไอคอน */
+  color: #a8a8a8; /* สีของข้อความในฟุตเตอร์ */
+  font-size: 14px; /* ขนาดของข้อความในฟุตเตอร์ */
+}

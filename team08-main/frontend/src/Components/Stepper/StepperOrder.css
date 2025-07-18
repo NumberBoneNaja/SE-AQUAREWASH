@@ -1,0 +1,22 @@
+.step-item {
+    @apply relative flex flex-col justify-center items-center lg:w-64 md:w-52 w-36  ;
+  }
+  .step-item:not(:first-child):before {
+    @apply content-[''] bg-[#a8ddf0] absolute w-full h-[7px] right-2/4 top-[30%] -translate-y-2/4 outline outline-offset-0 outline-2 outline-[#a8ddf0];
+  }
+  .step {
+    @apply w-10 h-10 flex items-center justify-center z-10 relative bg-blue-bg rounded-full font-semibold text-white outline outline-offset-0 outline-4 outline-[#a8ddf0];
+  }
+  .active .step {
+    @apply bg-blue-bg   ;
+  }
+  .complete .step {
+    @apply bg-blue-bg ;
+  }
+  .complete p {
+    @apply text-white;
+  }
+  .complete:not(:first-child):before,
+  .active:not(:first-child):before {
+    @apply bg-blue-bg outline outline-offset-0 outline-4 outline-[#a8ddf0];
+  }

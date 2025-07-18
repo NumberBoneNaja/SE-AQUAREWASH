@@ -1,0 +1,195 @@
+{
+  "id": "9fcfb826-3691-45a4-ac63-7222943baf65",
+  "version": "2.0",
+  "name": "week09",
+  "url": "http://localhost:5173/package-detail/3",
+  "tests": [{
+    "id": "c94321b2-700f-43e7-94b6-db51754fedc2",
+    "name": "success",
+    "commands": [{
+      "id": "6179bc1a-f5c3-4085-9a00-e6c540ef85ef",
+      "comment": "",
+      "command": "open",
+      "target": "/package-detail/3",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e558e1e2-4829-473f-a76b-69d29a66d41a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "981x817",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "72d0e857-f5dd-4772-913c-e7da24242cb3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.w-full:nth-child(1) > .table-cloth > .flex:nth-child(1)",
+      "targets": [
+        ["css=.w-full:nth-child(1) > .table-cloth > .flex:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "92726218-973b-4a50-9e4c-c1b80a498baa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.w-full:nth-child(1) > .table-cloth .icon-checkbox",
+      "targets": [
+        ["css=.w-full:nth-child(1) > .table-cloth .icon-checkbox", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "08000ab3-52c2-46a3-bd6d-5e22e59b3c2d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.w-full:nth-child(2) > .table-cloth .icon-checkbox",
+      "targets": [
+        ["css=.w-full:nth-child(2) > .table-cloth .icon-checkbox", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "c39d4d74-a650-405a-ada9-14e20ded77fa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.w-full:nth-child(2) > .table-cloth .w-\\[25px\\]:nth-child(3)",
+      "targets": [
+        ["css=.w-full:nth-child(2) > .table-cloth .w-\\[25px\\]:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div[2]/div/div[2]/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b9763fc-9f6b-451b-8aaf-d4b2efa65e43",
+      "comment": "",
+      "command": "click",
+      "target": "css=.relative",
+      "targets": [
+        ["css=.relative", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div[2]/div/div/div/div/div[3]/label/div", "xpath:idRelative"],
+        ["xpath=//label/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "613c6dfe-2673-4f8c-9b84-c3e07011a977",
+      "comment": "",
+      "command": "click",
+      "target": "css=.rounded-sm",
+      "targets": [
+        ["css=.rounded-sm", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div[3]/div[2]/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b06dba0b-4d9a-4b3d-84b5-538382a23987",
+      "comment": "",
+      "command": "type",
+      "target": "css=.rounded-sm",
+      "targets": [
+        ["css=.rounded-sm", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div[3]/div[2]/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "หอมๆ"
+    }, {
+      "id": "d17f734e-44eb-4603-a9e6-1eb50416c519",
+      "comment": "",
+      "command": "click",
+      "target": "css=#cover > img",
+      "targets": [
+        ["css=#cover > img", "css:finder"],
+        ["xpath=//div[@id='cover']/img", "xpath:idRelative"],
+        ["xpath=//div[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a861bf8e-4c1d-4139-b0bf-0b8c3a0ae597",
+      "comment": "",
+      "command": "type",
+      "target": "id=fileInput",
+      "targets": [
+        ["id=fileInput", "id"],
+        ["name=fileInput", "name"],
+        ["css=#fileInput", "css:finder"],
+        ["xpath=//input[@id='fileInput']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div[3]/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "D:\\moveC\\Downloads\\\\467769416_2073793003090127_7602306295741968763_n.jpg"
+    }, {
+      "id": "9e07f1c4-ae9a-4f5d-bc81-18ffc02bd13b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.px-4",
+      "targets": [
+        ["css=.px-4", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div[3]/div[4]/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "684f44d7-8fd2-4f15-8bf1-aa2edc93befe",
+      "comment": "",
+      "command": "click",
+      "target": "css=.w-full:nth-child(2) > .table-cloth .checkbox__symbol",
+      "targets": [
+        ["css=.w-full:nth-child(2) > .table-cloth .checkbox__symbol", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div[2]/div/div/div/div/label/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/label/span", "xpath:position"]
+      ],
+      "value": "สร้าง order สําเร็จ"
+    }]
+  }, {
+    "id": "b37b1ac7-056d-42ed-a233-aeb4d4f5430a",
+    "name": "fail",
+    "commands": [{
+      "id": "6d95f9aa-165b-4f28-bc39-b67ef7436da8",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:5173/package-detail/3",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "26e5ebc7-9f3d-4ca9-ba29-acfef9926c36",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "981x817",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f6b8da66-ab10-4ef6-bde0-2d6820404e56",
+      "comment": "",
+      "command": "click",
+      "target": "css=.px-4",
+      "targets": [
+        ["css=.px-4", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div[3]/div[3]/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05ee2eb4-0f36-4b25-9eb7-7e659a6aa745",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-message-custom-content > span:nth-child(2)",
+      "targets": [
+        ["css=.ant-message-custom-content > span:nth-child(2)", "css:finder"],
+        ["xpath=//span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'กรุณาเลือกประเภทผ้า ก่อนสร้าง order')]", "xpath:innerText"]
+      ],
+      "value": "กรุณาเลือกประเภทผ้า ก่อนสร้าง order"
+    }]
+  }],
+  "suites": [{
+    "id": "498ab75d-4354-4900-9877-32b9b7eec6c2",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c94321b2-700f-43e7-94b6-db51754fedc2"]
+  }],
+  "urls": ["http://localhost:5173/", "http://localhost:5173/package-detail/3"],
+  "plugins": []
+}

@@ -1,0 +1,177 @@
+/* DepartmentManagement.css */
+
+.department-container {
+    padding: 2rem;
+    background-color: #000000;
+    min-height: 100vh;
+  }
+  
+  .department-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    background-color: #fff;
+    padding: 16px 24px;
+    
+    
+  }
+  
+  .department-title {
+    margin: 0;
+    color: #000000;
+    font-size: 27px;
+    font-weight: 600;
+  }
+  
+  .department-card {
+    background-color: #fff;
+    
+    
+    
+   
+  }
+  
+ 
+  
+  /* ปรับแต่ง Ant Design Table */
+  .ant-table-wrapper {
+    background-color: #fff;
+   
+  }
+  
+  .ant-table-thead > tr > th {
+    background-color: #f5f7fa !important;
+    font-weight: 600;
+    color: #1f8fff;
+  }
+  
+  .ant-table-tbody > tr:hover > td {
+    background-color: #f5f7fa !important;
+  }
+  
+  /* ปรับแต่ง Modal */
+  .department-modal .ant-modal-content {
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+  
+  .department-modal .ant-modal-header {
+    padding: 16px 24px;
+    border-bottom: 1px solid #ffffff;
+    background-color: #fff;
+  }
+  
+  .department-modal .ant-modal-body {
+    padding: 24px;
+    background-color: #fff;
+  }
+  
+  /* ปรับแต่ง Form */
+  .department-form .ant-form-item-label > label {
+    font-weight: 500;
+    color: #0080ff;
+  }
+  
+  .department-form .ant-input,
+  .department-form .ant-input-textarea {
+    border-radius: 0.5rem;
+  }
+  
+  .department-form .ant-input:hover,
+  .department-form .ant-input-textarea:hover {
+    border-color: #3498db;
+  }
+  
+  /* ปรับแต่ง Buttons */
+  .action-buttons {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .action-button {
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  .action-button.ant-btn-primary {
+    background-color: #0066d2;
+  }
+  
+  .action-button.ant-btn-primary:hover {
+    background-color: #0086df;
+  }
+  
+  .action-button.ant-btn-danger {
+    background-color: #e74c3c;
+  }
+  
+  .action-button.ant-btn-danger:hover {
+    background-color: #c0392b;
+  }
+  
+  .action-button .anticon {
+    font-size: 14px;
+  }
+  
+  /* ปรับแต่ง Popconfirm */
+  .ant-popconfirm-buttons {
+    display: flex;
+    gap: 8px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .department-container {
+      padding: 1rem;
+    }
+  
+    .department-header {
+      flex-direction: column;
+      gap: 16px;
+      align-items: flex-start;
+    }
+  
+    .action-buttons {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .action-button {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+  
+  /* Dark Mode Support */
+  @media (prefers-color-scheme: dark) {
+    .department-container {
+      background-color: #ffffff;
+    }
+  
+    .department-header,
+    .department-card {
+      background-color: #ffffff;
+     
+    }
+  
+    .department-title {
+      color: #000000;
+      
+    }
+  
+    .ant-table-thead > tr > th {
+      background-color: #ffffff !important;
+      color: #fff;
+    }
+  
+    .ant-table-tbody > tr:hover > td {
+      background-color: #5dc6ff !important;
+    }
+  
+    .department-form .ant-form-item-label > label {
+      color: #000000;
+    }
+  }

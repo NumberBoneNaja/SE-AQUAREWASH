@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&display=swap');
+
+body { 
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(0, 0, 0);
+
+}
+.backgroud{
+    position:fixed;
+    width: 7000px;
+
+    height: 100%;
+    background-color: #090d1f;
+}
+
+.Logincontanner {
+    position: fixed;  
+    top: 50%;  
+    left: 50%;  
+    transform: translate(-50%, -50%);
+
+    background-color: rgb(34, 34, 34);
+    height: 600px;
+    width: 1000px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #0000005c;
+    font-size: 40px;
+    font-family: 'Dongle', sans-serif;
+}
+.Loginsub{
+    display: flex;
+    justify-content: space-between;
+}
+.LoginLeft{
+    background-color: #0e1532;
+    width: 40%;
+    height: 600px;
+    border-radius: 10px 0 0 10px;
+    color: #E8D196;
+    text-align: right;
+    padding-right: 30px;
+}
+
+@keyframes LoginLeft{
+    0%{
+        transform: translate(-90px, -45px);
+    }50%{
+        transform: translate(-90px, -50px);
+    }100%{
+        transform: translate(-90px, -45px);
+    }
+}
+
+
+.LoginLeft p:first-child {
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 600px;
+    color: #ffffff;
+    text-shadow: 0 0 10px #ff6ec7, 0 0 20px #ff6ec7, 0 0 30px #ff6ec7, 0 0 40px #ff6ec7;
+    animation: glowEffect 0.8s infinite alternate ease-in-out;
+}
+
+.LoginLeft p:nth-child(2) {
+    font-size: 24px;
+    line-height: -150px;
+    transform: translateY(-380px);
+    color: #ffffff;
+    text-shadow: 0 0 5px #6ec7ff, 0 0 10px #6ec7ff, 0 0 20px #6ec7ff, 0 0 30px #6ec7ff;
+    animation: glowEffect 1s infinite alternate ease-in-out;
+}
+
+/* Animation สำหรับเอฟเฟกต์เรืองแสง */
+@keyframes glowEffect {
+    from {
+        text-shadow: 0 0 5px #ff6ec7, 0 0 10px #ff6ec7, 0 0 15px #ff6ec7, 0 0 20px #ff6ec7;
+    }
+    to {
+        text-shadow: 0 0 20px #ff6ec7, 0 0 30px #ff6ec7, 0 0 40px #ff6ec7, 0 0 50px #ff6ec7;
+    }
+}
+
+
+
+
+.password{
+    max-width: 175px;
+}
+
+
+
+
+.Loginrigth{
+    background-color: #ffffff;
+    
+    width: 60%;
+    height: 600px;
+    border-radius: 0 10px 10px 0;
+}
+.formLogin{
+    margin: 160px 100px;
+    
+}
+.formLogin:first-child{
+    font-weight: 800;
+    font-size: 100px;
+    transform: translateY(-20%);
+}
+.formLogin p{
+    font-size: 25px;
+    font-family: 'Dongle', sans-serif;
+    margin: 0;
+}
+
+.LoginButton {
+    text-align: right;
+}
+
+.LoginButton button {
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #292929;
+    color: #ffffff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    animation: glowEffectGreen 1s infinite alternate ease-in-out;
+    box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+}
+
+/* Animation สำหรับปุ่มเรืองแสงสีเขียว */
+@keyframes glowEffectGreen {
+    from {
+        box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+    }
+    to {
+        box-shadow: 0 0 20px #00ff00, 0 0 40px #00ff00, 0 0 60px #00ff00;
+    }
+}
+
+.LoginButton button:hover {
+    background-color: #3c3c3c; /* เพิ่มสีพื้นหลังเข้มขึ้นเมื่อ hover */
+}
+
+
+
+.iconuser{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    transform: translateX(-40px);
+}

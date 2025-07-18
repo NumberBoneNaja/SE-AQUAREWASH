@@ -1,0 +1,829 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&display=swap');
+*{
+    scrollbar-width: none;
+}
+*::selection{
+    background-color: #eed699;
+}
+.AdvertisingMain  {
+    width: 100%;
+    height: 355px;
+    background-color: #E8D196;
+    font-family: 'Dongle', sans-serif;
+    color: #ffffff;
+
+    display: flex;
+    justify-content:center;
+}
+
+.AdvertisingMain img{
+    width: 319px;
+    height: 347px;
+    margin-left: 40px;
+
+    animation-duration: 10s;
+    animation-name: motionAd;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes motionAd{
+    0%{
+        transform: translateY(0%);
+    }25%{
+        transform: translateY(2%);
+    }75%{
+        transform: translateY(-2%);
+    }100%{
+        transform: translateY(0%);
+    }
+}
+
+
+.advertisingtext {
+    font-size: 24px;
+    width: 800px;
+    line-height: 0.7;
+    padding-right: 300px;
+}
+.advertisingtext h1{
+    font-size: 96px;
+    margin: 100px 0 10px ;
+}
+
+.fade {
+    width: 319px;
+    height: 347px;
+    margin-left: 40px;
+
+    /* การเปลี่ยนแปลงสมูท */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade.visible {
+    opacity: 1;
+}
+
+.fade.hidden {
+    opacity: 0;
+}
+
+
+
+
+
+
+
+
+.Floor {
+    width: 1150px;
+    height: 200px;
+    margin: 60px auto 60px;
+    font-family: 'Dongle', sans-serif;
+    font-size: 24px ;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+
+    animation-duration: 1s;
+    animation-name: introAd;
+    animation-timing-function: ease-in-out;
+}
+@keyframes introAd{
+    0%{
+        transform: translateY(-70px);
+    }100%{
+        transform: translateY(0px);
+    }
+}
+.subFloor {
+    transition: 0.3s ease-in-out;
+}
+.subFloor:hover {
+    background-color: #f4f4f471;
+    border-radius: 10px;
+    color: #C9AF62;
+}
+.Floor img{
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+
+    animation-duration: 5s;
+    animation-name: LoopSize;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes LoopSize{
+    0%{
+        scale: 1;
+    }50%{
+        scale: 1.2;
+        filter: drop-shadow(0 0 20px #eed699);
+    }100%{
+        scale: 1;
+    }
+}
+.Floor h4{
+    margin: 0px 0 0px;
+    font-size: 36px ;
+
+}
+.Floor p{
+    margin: 0;
+    line-height: 0.7;
+    color: #8A8A8A;
+}
+
+
+
+
+
+
+.NEWS {
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+}
+/*//////////////////////////////////////////////////////////////*/
+.Product {
+    width: 100%;
+    height: 300px;
+    display:inline-flex;
+    align-items: center;
+    justify-content:center;
+    
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: 'Dongle', sans-serif;
+}
+.ProductImage {
+    width: 200px;
+    height: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ProductImage p{
+    font-size: 20px;
+    color: #8A8A8A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.ProductImage1 {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ProductImage2 {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ProductImage3 {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ProductImage4 {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Product :hover{
+    transform: scale(1.1);
+    transition: 0.4s ease-in-out;
+}
+.NEWS span{
+    /*margin-top: 500px;*/
+    width: 500px;
+    height: 3px;
+    background-color: #E8D196;
+    margin-left: 150px;
+    margin-right: 150px;
+
+}
+
+
+.NewInfo {
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 300px;
+    font-family: 'Dongle', sans-serif;
+}
+.SubInfo {
+    margin-top: 50px;
+    width: 100%;
+    height: 245px;
+    transition: 0.3s ease-in-out;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    animation-duration: 3s;
+    animation-name: NewSub;
+    animation-timing-function: ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+
+@keyframes NewSub{
+    0%{
+        opacity: 0;
+        transform: translateY(100%);
+    }100%{
+        opacity: 1;
+        
+    }
+}
+.SubInfo img{
+    box-shadow: 0 8px 10px #00000070;
+}
+.SubInfo span{
+    margin-left: 40px;
+    margin-right: 100px;
+}
+.SubInfo h4{
+    margin: 0;
+    font-size: 39px;
+    line-height: 0.7;
+}
+.SubInfo p{
+    font-size: 20px;
+    color: #8A8A8A;
+}
+.SubInfo:hover {
+    color: #C9AF62;
+}
+
+
+
+
+
+
+footer{
+    background-color: #C9AF62;
+    width: 100%;
+    height: 300px;
+    margin-top: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.Store1 {
+    max-width: 1536px;
+    width: 90%;
+    height: 120px;
+    padding: 50px 0;
+    margin-inline: auto;
+    position: relative;
+    overflow: hidden;
+
+    /* ใช้ mask เพื่อให้ลูกจางตามแม่ */
+    mask-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0), 
+        rgba(0, 0, 0, 1) 10%, 
+        rgba(0, 0, 0, 1) 90%, 
+        rgba(0, 0, 0, 0)
+    );
+}
+
+@keyframes Slide {
+    to {
+        left: -200px;
+    }
+}
+
+.Store1 div {
+    background-color: #48484800;
+    width: 180px;
+    height: 120px;
+    box-shadow: 0 0 10px #0000002c;
+    border-radius: 5px;
+    position: absolute;
+    left: 100%;
+    animation: Slide 20s linear infinite;
+}
+.Store1 img {
+    width: 180px;
+    height: 120px;
+    left: 100%;
+    border-radius: 5px;
+}
+
+
+/* เพิ่ม delay ให้ลูกแต่ละตัว */
+.Store1 :nth-child(2) {
+    animation-delay: calc(20s / 8 * (8 - 1) * -1);
+}
+.Store1 :nth-child(3) {
+    animation-delay: calc(20s / 8 * (8 - 2) * -1);
+}
+.Store1 :nth-child(4) {
+    animation-delay: calc(20s / 8 * (8 - 3) * -1);
+}
+.Store1 :nth-child(5) {
+    animation-delay: calc(20s / 8 * (8 - 4) * -1);
+}
+.Store1 :nth-child(6) {
+    animation-delay: calc(20s / 8 * (8 - 5) * -1);
+}
+.Store1 :nth-child(7) {
+    animation-delay: calc(20s / 8 * (8 - 6) * -1);
+}
+.Store1 :nth-child(8) {
+    animation-delay: calc(20s / 8 * (8 - 7) * -1);
+}
+
+/*==================================================Admin=============================================*/
+.H1Management {
+    margin: 10px;
+    text-align: center;
+    font-size: 74px;
+    font-weight: 200;
+    font-family: 'Dongle', sans-serif;
+    text-shadow: 0 4px 4px #00000047;
+    color: #62501A;
+}
+.SubH1{
+    text-align: center;
+    margin: 0;
+    transform: translateY(-50%);
+    font-size: 34px;
+    font-family: 'Dongle', sans-serif;
+    text-shadow: 0 4px 4px #00000017;
+    color: #C9AF62;
+
+    animation: SubH1 5s ease-in-out infinite;
+}
+@keyframes SubH1{
+    0%{
+        scale: 1;
+    }50%{
+        scale: 1.1;
+    }100%{
+        scale: 1;
+    }
+}
+.PManagement {
+    text-align: center;
+    margin: 0px;
+    font-size: 26px;
+    font-family: 'Dongle', sans-serif;
+    color: #62501A;
+    text-shadow: 0 4px 4px #00000047;
+    transform: translateY(-30px);
+}
+.ManageMainPage {
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    font-size: 26px;
+    font-family: 'Dongle', sans-serif;
+    color: #C9AF62;
+    border: 2px solid #62501A;
+    box-shadow: 0 4px 4px #00000047;
+    border-radius: 20px;
+    width: 200px;
+    padding-right: 10px;
+}
+.ManageMainPage img{
+    margin-left: 10px;
+    margin-right: 5px;
+}
+.Mainpage {
+    display: flex;
+    justify-content: center;
+}
+.Management {
+    font-size: 64px;
+    font-family: 'Dongle', sans-serif;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-left: 200px;
+    margin-right: 200px;
+
+    animation-duration: 0.8s;
+    animation-name: Management;
+    animation-timing-function: ease-in-out;
+}
+@keyframes Management{
+    0%{
+        opacity: 0;
+    }100%{
+    }
+}
+.ManagementSpan {
+    width: 330px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFCF2;
+    border: 2px solid #62501A;
+    border-radius: 10px;
+    text-align: center;
+    color: #C9AF62;
+    box-shadow: 0 4px 4px #00000047;
+    cursor: pointer;
+
+    animation: ManagementSpan 1s ease-in-out; /* เพิ่มระยะเวลาและใช้ easing ที่สมูทขึ้น */
+}
+
+@keyframes ManagementSpan {
+    0% {
+        border-radius: 50%;
+        scale: 0.8;
+    }
+    100% {
+        
+    }
+}
+
+.ManagementSpan img {
+    max-width: 100%; 
+    height: auto;
+    margin-bottom: 10px; 
+
+    animation-duration: 5s;
+    animation-name: ManagementSpanImg;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes ManagementSpanImg{
+    0%{
+        transform: translateY(0px);
+    }50%{
+        transform: translateY(10px);
+    }100%{
+        transform: translateY(0px);
+    }
+}
+
+
+
+.Storewaitingforapproval {
+    display: flex;
+    flex-direction: column; /* จัดเรียงการ์ดในแนวตั้ง */
+    align-items: center; /* จัดการ์ดให้อยู่กึ่งกลางแนวนอน */
+    height: auto;
+    width: 100%; /* ใช้ 100% เพื่อให้การ์ดอยู่กึ่งกลาง */
+    margin: 0px auto; /* กำหนดให้อยู่ตรงกลาง */
+}
+.Storewaiting{
+    background-color: #ffffff;
+    border-right: 10px solid #C9AF62;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #0000002c;
+    width: 1000px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+    animation: Storewaiting 1s ease-in-out ;
+}
+@keyframes Storewaiting{
+    0%{
+        transform: translateY(550px);
+        opacity: 0;
+    }100%{
+        transform: translateY(0px);
+    }
+}
+.Storewaiting.Waiting{
+    border-right: 10px solid #6265C9;
+}
+.Storewaiting.WaitOwn{
+    border-right: 10px solid #484848;
+}
+.Storewaiting.Payment{
+    border-right: 10px solid #09a401;
+}
+
+.Storewaiting span{
+    display: flex;
+    align-items: center;
+}
+.Storewaiting img{
+    margin-left: 3px;
+    margin-right: 10px;
+    border-radius: 8px;
+}
+
+.textinfo{
+    width: 550px;
+    transform: translateY(10%);
+}
+.textinfo p:nth-child(1){
+    transform: translateY(-30%);
+}
+.textinfo p:nth-child(2){
+    overflow-y: scroll;
+    transform: translateY(-100%);
+    line-height: 15px;
+    height: 50px;
+}
+.textinfo p:nth-child(3){
+    transform: translateY(-200%);
+}
+.Storewaitinginfo img{
+    width: 250px;
+    height: 145px;
+}
+.Storewaitinginfo p{
+    font-size: 20px;
+    font-family: 'Dongle', sans-serif;
+    font-weight: 100;
+    color: #62501A;
+}
+.StorewaitingBtn{
+    margin-right: 25px;
+}
+
+.route {
+    width: 100%;
+    height: 25px;
+    background-color: #F2F2F2;
+    display: flex;
+    align-items: center;
+
+    font-size: 20px;
+    font-family: 'Dongle', sans-serif;
+    color: #C9AF62;
+}
+.selection{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.AllSeletion{
+    position: fixed;
+    left: 20px;
+    cursor: pointer;
+
+    animation: AllSeletion 0.5s ease-in-out ;
+}
+@keyframes AllSeletion{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }100%{
+        transform: translateX(0px);
+    }
+}
+.AllSeletion P:nth-child(1){
+    animation: AllSeletion1 2s ease-in-out infinite;
+}
+@keyframes AllSeletion1{
+    0%{
+
+    }50%{
+        box-shadow: 0 0 10px #6265C9;
+        scale: 0.9;
+        rotate: 180deg;
+    }100%{
+        rotate: 360deg;
+    }
+}
+.AllSeletion P:nth-child(2){
+    animation: AllSeletion2 2.2s ease-in-out infinite;
+}
+@keyframes AllSeletion2{
+    0%{
+
+    }50%{
+        box-shadow: 0 0 10px #484848;
+        scale: 0.9;
+    }100%{
+        
+    }
+}
+.AllSeletion P:nth-child(3){
+    animation: AllSeletion3 2.4s ease-in-out infinite;
+}
+@keyframes AllSeletion3{
+    0%{
+
+    }50%{
+        box-shadow: 0 0 10px #C9AF62;
+        scale: 0.9;
+    }100%{
+        
+    }
+}
+.AllSeletion P:nth-child(4){
+    animation: AllSeletion4 2.6s ease-in-out infinite;
+}
+@keyframes AllSeletion4{
+    0%{
+
+    }50%{
+        box-shadow: 0 0 10px #0bd700;
+        scale: 0.9;
+        rotate: 10deg;
+    }100%{
+        
+    }
+}
+
+/* ====================================================Admin job========================================================= */
+.headJob{
+    text-align: center;
+    font-family: "PT Serif", serif;
+    font-size:35px;
+}
+.JobRQ{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 225px);
+    gap: 20px;
+    justify-content: center;
+}
+.selcetStatus{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 150px);
+    gap: 50px;
+    justify-content: center;
+    font-family: "Parkinsans", sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
+.selcetStatus p{
+    background-color: #35a3d6;
+    text-align: center;
+    height: 20px;
+    width: 150px;
+    padding: 15px;
+    
+    
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow:  0 0 10px #00000023;
+    animation: selectP 0.8s linear;
+}
+@keyframes selectP {
+    0%{
+        transform: scale(0.6);
+        opacity: 0;
+    }
+}
+.cardUser{
+    background-color: #ffffff;
+    height: 300px;
+    box-shadow: 0 0 5px #00000056;
+    border-radius: 5px;
+    animation: cardUser 0.5s ease-in-out;
+}
+@keyframes cardUser {
+    0%{
+        transform: translateY(300px);
+        opacity: 0;
+    }
+}
+.backgroundUserJob{
+    width: 225px;
+    height: 130px;
+    border-radius: 5px 5px 0 0;
+}
+.ProfileUserJob{
+    position: relative;
+    left: 25%;
+    top: -20%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 0 2px #00000081;
+    animation: Profile 5s ease-in-out 0.5s infinite ;
+}
+@keyframes Profile {
+    0%{
+        transform: translateY(-5px);
+    }50%{
+        transform: translateY(0px);
+    }100%{
+        transform: translateY(-5px);
+    }
+}
+.infoUser{
+    position: relative;
+    top: -70px;
+    text-align: center;
+    font-family: "Parkinsans", sans-serif;
+    line-height: 5px;
+    font-size: 10px;
+    height: 80px;
+    overflow-y: scroll;
+}
+.setButton{
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-210%);
+    margin: 0px 10px;
+    font-family: "Parkinsans", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    
+}
+.setButton p{
+    cursor: pointer;
+    color: #C9AF62;
+    padding: 0px 10px;
+   
+    box-shadow: 0 0 5px #00000037;
+    border: 1px solid #C9AF62;
+}
+.StatusUser{
+    transform: translateY(-321px);
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    background-color: #c7ac5a;
+    font-family: "Parkinsans", sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    box-shadow: 0 5px 5px #00000033;
+}
+
+
+.membership-payments-container {
+    padding: 20px;
+    display:inline-flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.history-button {
+    
+    margin-top: 40px;
+    margin-left: 1040px;
+    margin-right: 40px;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.payments-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.payment-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.payment-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.payment-card p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.payment-card strong {
+    font-weight: bold;
+}

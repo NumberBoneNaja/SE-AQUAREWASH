@@ -1,0 +1,13 @@
+.create-order {
+    border-width: 2px;
+    border-style: solid;
+    border-color: currentColor; /* ใช้สีของตัวอักษรปัจจุบัน */
+    border-radius: 0.5rem; /* ค่าที่สอดคล้องกับ rounded */
+    padding: 0 1rem; /* px-4 */
+    opacity: 1; /* opacity-100 */
+    font-size: 1rem; /* text-md */
+    font-variant: normal; /* normal-case */
+    font-weight: 400; /* font-normal */
+    color: white; /* text-white */
+    background-color: transparent; /* bg-transparent */
+}

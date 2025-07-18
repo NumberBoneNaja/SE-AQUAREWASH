@@ -1,0 +1,19 @@
+/* เปลี่ยนสีเส้นที่ทำงานเสร็จแล้วเป็น Gradient */
+.custom-steps .ant-steps-item-finish .ant-steps-item-tail::after {
+    background: linear-gradient(to top left, #22d3ee, #38bdf8) !important; /* Gradient จาก cyan-400 ไปยัง sky-400 */
+}
+
+/* เปลี่ยนสีจุดที่ทำงานเสร็จแล้ว */
+.custom-steps .ant-steps-item-finish .ant-steps-item-icon {
+    background: linear-gradient(to top left, #22d3ee, #38bdf8) !important; /* Gradient */
+    border: none !important;
+}
+
+/* เปลี่ยนสีตัวเลขในจุด */
+.custom-steps .ant-steps-item-finish .ant-steps-item-icon > .ant-steps-icon {
+    color: white !important; /* เปลี่ยนสีตัวเลขเป็นสีขาว */
+}
+.custom-steps .ant-steps-item-finish .ant-steps-item-icon {
+    background-color: #00BBF0 !important; /* เปลี่ยนสีพื้นหลัง Dot */
+    border-color: #00BBF0 !important; /* เปลี่ยนสีขอบ Dot */
+}

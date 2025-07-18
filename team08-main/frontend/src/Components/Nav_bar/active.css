@@ -1,0 +1,40 @@
+.Nav-font{
+    color:#24292E ;
+    
+}
+.Nav-font-active{
+    color:#31BBEC;
+    
+}
+#noti{
+    margin: 0;
+}
+.primium svg {
+    fill: #24292E; /* สีเริ่มต้น */
+    transition: fill 0.3s ease; /* เพิ่มการเปลี่ยนสีแบบนุ่มนวล */
+  }
+  
+.primium-active svg {
+    fill: #31BBEC; /* สีเมื่อ hover */
+}
+.notification svg {
+    fill: #24292E; /* สีเริ่มต้น */
+    transition: fill 0.3s ease; /* เพิ่มการเปลี่ยนสีแบบนุ่มนวล */
+  }
+  
+
+  
+.burger-icon{
+    color: #24292E;
+}
+.notification-active svg {
+    fill: #31BBEC; /* สีเมื่อ hover */
+}
+
+.Em-active{
+  background-color: #e1f6fc;
+  border-radius: 5px;
+  
+  
+
+}

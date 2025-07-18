@@ -1,0 +1,172 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Dongle', sans-serif;
+  background-color: #ffffff;
+}
+
+
+/* Main Page Container */
+.SignUpPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #090d1f;
+}
+
+.SignUpForm label {
+  display: block;
+  text-align: left;
+  font-weight: bold;
+  font-size: 25px; /* เพิ่มขนาดตัวหนังสือ */
+  margin-bottom: 5px;
+}
+
+/* Card for Form */
+.SignUpCard {
+  background-color: #0e1532;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+}
+
+/* Header */
+@keyframes glow {
+  0%, 100% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff4da6, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 75px #ff4da6;
+  }
+  50% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #ff99cc, 0 0 30px #ff99cc, 0 0 40px #ff99cc, 0 0 50px #ff99cc, 0 0 75px #ff99cc, 0 0 100px #ff99cc;
+  }
+}
+
+@keyframes gradient-text {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.SignUpCard h1 {
+  font-size: 45px;
+  color: transparent; /* ทำให้ข้อความใสเพื่อใช้ไล่สี */
+  margin-bottom: 15px;
+  text-align: center;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff4da6, 0 0 30px #ff4da6; /* เงา */
+  background: linear-gradient(90deg, #ff4da6, #4da6ff, #4dff4d, #ff4d4d);
+  background-size: 200% 200%; /* ขยายไล่สีให้วิ่ง */
+  -webkit-background-clip: text; /* แสดง gradient ในข้อความ */
+  animation: glow 2s infinite alternate, gradient-text 4s infinite linear; /* รวมแอนิเมชัน */
+}
+
+
+.SignUpCard label {
+  font-size: 23px;
+  color: #bdbdbd;
+  margin-bottom: 5px;
+}
+
+/* Form Styles */
+.SignUpForm input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #546087;
+  background-color: #33335a; /* เปลี่ยนสีพื้นหลัง */
+  color: #bdbdbd;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+/* Button Styles */
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 1px #4caf50, 0 0 5px #4caf50, 0 0 10px #4caf50;
+  }
+  50% {
+    box-shadow: 0 0 15px #4caf50, 0 0 20px #4caf50, 0 0 25px #4caf50;
+  }
+}
+
+@keyframes glow-click {
+  0% {
+    box-shadow: 0 0 10px #ffffff, 0 0 20px #4caf50, 0 0 30px #4caf50;
+  }
+  100% {
+    box-shadow: 0 0 30px #ffffff, 0 0 40px #4caf50, 0 0 50px #4caf50;
+  }
+}
+
+.SignUpForm {
+  display: grid;
+  gap: 10px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* แบ่งเป็น 2 คอลัมน์ */
+  gap: 15px; /* ระยะห่างระหว่างคอลัมน์ */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* form label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-width: 175px;
+} */
+
+button {
+  margin-top: 20px;
+  padding: 12px;
+  /* width: 100%; */
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.SignUpForm button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: #cbc3c3;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.1s ease, transform 0.2s ease;
+  animation: glow-pulse 1s infinite; /* กระพริบเรืองแสง */
+}
+
+.SignUpForm button:active {
+  animation: glow-click 0.2s forwards; /* เพิ่มแสงเมื่อคลิก */
+  transform: scale(0.95); /* ย่อปุ่มเล็กลงเล็กน้อยเมื่อกด */
+}
+
+.SignUpForm button:hover {
+  background-color: #45a049;
+}

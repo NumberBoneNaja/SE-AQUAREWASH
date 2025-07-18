@@ -1,0 +1,292 @@
+{
+  "id": "7ef16448-c9b4-4d84-b795-c41d4f798af4",
+  "version": "2.0",
+  "name": "Cloth",
+  "url": "http://localhost:5173/AdminPackageDetail/3",
+  "tests": [{
+    "id": "878de0a3-b946-4355-8807-ec86265d7601",
+    "name": "AllPass",
+    "commands": [{
+      "id": "9c85a575-bfbf-4388-b922-7b20332aac87",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:5173/AdminPackageDetail/3",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a740ad38-3b65-4da2-b22c-848f79d1bc70",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1187x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a8145f5f-d8cc-4ec6-a09d-aa1bd0b893f4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.w-full:nth-child(1) > div > .detail-package > .flex span",
+      "targets": [
+        ["css=.w-full:nth-child(1) > div > .detail-package > .flex span", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[3]/div/div[2]/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Add Cloth')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eed458ea-3888-4367-ba9c-91fda55614dd",
+      "comment": "",
+      "command": "click",
+      "target": "id=TypeName",
+      "targets": [
+        ["id=TypeName", "id"],
+        ["css=#TypeName", "css:finder"],
+        ["xpath=//input[@id='TypeName']", "xpath:attributes"],
+        ["xpath=//form/div/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9eb60cc4-aad8-47a1-88c9-72b2e7bff072",
+      "comment": "",
+      "command": "type",
+      "target": "id=TypeName",
+      "targets": [
+        ["id=TypeName", "id"],
+        ["css=#TypeName", "css:finder"],
+        ["xpath=//input[@id='TypeName']", "xpath:attributes"],
+        ["xpath=//form/div/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "สูทปกติ"
+    }, {
+      "id": "4e56bb7f-180b-4b42-b567-b7089b108a50",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-form-item:nth-child(2) > .ant-row",
+      "targets": [
+        ["css=.ant-form-item:nth-child(2) > .ant-row", "css:finder"],
+        ["xpath=//form/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "00e63914-0027-44c9-b59b-d51a8fa45d8e",
+      "comment": "",
+      "command": "type",
+      "target": "id=Price",
+      "targets": [
+        ["id=Price", "id"],
+        ["css=#Price", "css:finder"],
+        ["xpath=//input[@id='Price']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "200"
+    }, {
+      "id": "22eb1d35-0085-4554-981c-82c1751611a7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-form-item-control-input-content span",
+      "targets": [
+        ["css=.ant-form-item-control-input-content span", "css:finder"],
+        ["xpath=//div[3]/div/div/div/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Create')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d66cf476-8074-433f-b3e7-288f041f2f1c",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ant-form-item-control-input-content span",
+      "targets": [
+        ["css=.ant-form-item-control-input-content span", "css:finder"],
+        ["xpath=//div[3]/div/div/div/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Create')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "59ffd4e0-a82a-4af6-b54d-d4778fbe7c4a",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.ant-btn > span:nth-child(2)",
+      "targets": [
+        ["css=.ant-btn > span:nth-child(2)", "css:finder"],
+        ["xpath=//div[3]/div/div/div/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Create')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ba99cc11-777f-414b-8c50-e4b777e81e74",
+    "name": "RequireClothType",
+    "commands": [{
+      "id": "3ef963c3-fc49-43df-ba70-b2baf8af6d02",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:5173/AdminPackageDetail/3",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9aa186c7-1ee8-4fbb-a3bf-a0df22ed8ac4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1187x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cd2ba1a2-29ca-40b4-94f3-68cdfb75e3af",
+      "comment": "",
+      "command": "click",
+      "target": "css=.w-full:nth-child(1) > div > .detail-package > .flex span",
+      "targets": [
+        ["css=.w-full:nth-child(1) > div > .detail-package > .flex span", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[3]/div/div[2]/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Add Cloth')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "173c783e-99cb-41f3-a42a-9a79e6c96f4c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-form-item:nth-child(2) > .ant-row",
+      "targets": [
+        ["css=.ant-form-item:nth-child(2) > .ant-row", "css:finder"],
+        ["xpath=//form/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4d5bffa-140b-4445-ad5b-773cd21b527a",
+      "comment": "",
+      "command": "type",
+      "target": "id=Price",
+      "targets": [
+        ["id=Price", "id"],
+        ["css=#Price", "css:finder"],
+        ["xpath=//input[@id='Price']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "200"
+    }, {
+      "id": "b5169a3b-3b69-49d9-a3fb-c9a146318d52",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-form-item-control-input-content > .ant-btn",
+      "targets": [
+        ["css=.ant-form-item-control-input-content > .ant-btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[3]/div/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "dc584c3b-f470-48b5-aedf-5f16e4f7574f",
+    "name": "RequirecantBe0",
+    "commands": [{
+      "id": "c58b0006-459b-41db-b233-bd0bd23101f8",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:5173/AdminPackageDetail/3",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a6601988-6176-4d51-99f5-bcd54a57ba04",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1187x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e6be4011-e34b-47b7-a042-ea2d33f8e380",
+      "comment": "",
+      "command": "click",
+      "target": "css=.w-full:nth-child(1) > div > .detail-package > .flex span",
+      "targets": [
+        ["css=.w-full:nth-child(1) > div > .detail-package > .flex span", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[3]/div/div[2]/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Add Cloth')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "27de452f-b1cd-4bde-9fc6-833c72206825",
+      "comment": "",
+      "command": "click",
+      "target": "id=TypeName",
+      "targets": [
+        ["id=TypeName", "id"],
+        ["css=#TypeName", "css:finder"],
+        ["xpath=//input[@id='TypeName']", "xpath:attributes"],
+        ["xpath=//form/div/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "808522a1-ace6-403a-9cad-a608b51e0162",
+      "comment": "",
+      "command": "type",
+      "target": "id=TypeName",
+      "targets": [
+        ["id=TypeName", "id"],
+        ["css=#TypeName", "css:finder"],
+        ["xpath=//input[@id='TypeName']", "xpath:attributes"],
+        ["xpath=//form/div/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "สูทปกติ"
+    }, {
+      "id": "04cd2161-0067-4ddf-9006-c09913d539f4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-form-item-control-input-content > .ant-btn",
+      "targets": [
+        ["css=.ant-form-item-control-input-content > .ant-btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[3]/div/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1be6b08-af8e-419a-84f9-e01fc037da09",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ant-form-item-control-input-content > .ant-btn",
+      "targets": [
+        ["css=.ant-form-item-control-input-content > .ant-btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[3]/div/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b42e7ba-4142-4de3-87cf-5bbbbf8b20f4",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.ant-form-item-control-input-content > .ant-btn",
+      "targets": [
+        ["css=.ant-form-item-control-input-content > .ant-btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[3]/div/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d609add-c0d7-4929-a0a8-3889da9d3d35",
+      "comment": "",
+      "command": "click",
+      "target": "id=Price",
+      "targets": [
+        ["id=Price", "id"],
+        ["css=#Price", "css:finder"],
+        ["xpath=//input[@id='Price']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e807fb1e-abf0-4c63-8f51-5fe555c6b71b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["878de0a3-b946-4355-8807-ec86265d7601"]
+  }],
+  "urls": ["http://localhost:5173/AdminPackageDetail/3"],
+  "plugins": []
+}

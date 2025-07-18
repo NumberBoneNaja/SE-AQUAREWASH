@@ -1,0 +1,777 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&display=swap');
+
+.positionNav{
+    position: fixed;
+    width: 100%;
+    height: auto;
+    z-index: 1000;
+}
+
+.NavComponent {
+    width: 100%;
+    height: 70px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.NavComponent span {
+    flex: 1;
+    color: #6D6D6D; 
+}
+
+.SubNab1 {
+    text-align: left;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+
+    font-size: 20px;
+    font-family: 'Dongle', sans-serif;
+}
+.Loclation{
+    animation-duration: 3s;
+    animation-name: SubNab1;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes SubNab1{
+    0%{
+        transform: translateY(0);
+    }25%{
+        transform: translateY(-2px);
+    }75%{
+        transform: translateY(2px);
+    }100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes Clock{
+    0%{
+        rotate: -360deg;
+    }100%{
+        rotate: 0;
+    }
+}
+
+.SubNab1 p {
+    margin: 0;
+    color: #6D6D6D;
+    line-height: 0.7;
+}
+
+.vertical-divider {
+    width: 1px;
+    height: 45px; /* ปรับความสูงตามต้องการ */
+    background-color: #6D6D6D; /* สีของเส้นแบ่ง */
+}
+
+
+.SubNab2 {
+    text-align: center;
+}
+
+.SubNab3 {
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+
+    font-size: 24px;
+    font-family: 'Dongle', sans-serif;
+}
+
+.welcome{
+    text-align: right;
+}
+.profileButton{
+    box-shadow: 0 4px 5px #6D6D6D;
+}
+.box{
+    width: 25px;
+    height: 120px;
+    text-align: right;
+    cursor: pointer;
+}
+
+.NavComponentMenu {
+    width: 100%;
+    height: 40px;
+
+    backdrop-filter: blur(60px);
+    box-shadow: 0 6px 4px #00000005;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.NavComponentMenu a {
+    text-decoration: none;
+    color: #000;
+}
+
+.NavComponentMenu span{
+    margin: 0 20px 0;
+    font-size: 24px;
+    font-family: 'Dongle', sans-serif;
+}
+
+.MenuHover {
+    transition: 0.4s ease-in-out;
+}
+.MenuHover.active {
+    color: #C9AF62;
+}
+
+.MenuHover:hover {
+    color: #E8D196;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.dropboxMenu {
+    position: absolute;
+    right: 40px;
+    top: 70px;
+    /* transform: translateY(90px); */
+    width: 185px;
+    height: auto;
+    background-color: #1B1B1B;
+    border-radius: 10px 0 10px 10px;
+    text-align: left;
+    box-shadow: 0 4px 4px #6b6b6b;
+    z-index: 1002;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    visibility: hidden;
+}
+.dropboxMenu.fade-in {
+    animation: dropboxMenu 0.3s ease-in-out forwards;
+    visibility: visible;
+}
+.dropboxMenu.fade-out {
+    animation: dropboxMenuOut 0.3s ease-in-out reverse forwards;
+    visibility: hidden;
+}
+
+@keyframes dropboxMenu{
+    0%{
+        transform: translateX(100px);
+        scale: 0;
+    }50%{
+        transform: translateX(0px);
+        scale: 1;
+    }100%{
+
+    }
+}
+@keyframes dropboxMenuOut{
+    0%{
+        transform: translateX(1000px);
+        scale: 0;
+    }50%{
+        transform: translateX(0px);
+        scale: 1;
+    }100%{
+
+    }
+}
+.dropboxMenu a {
+    text-decoration: none;
+}
+
+.dropboxMenu p {
+   
+    margin: 10px 20px;
+    color: #ffffff;
+    line-height: 1.5;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+}
+.dropboxMenuP:hover {
+    color: #E8D196;
+}
+.lineMenu {
+    margin-left: 10px;
+    width: 160px;
+    background-color: #ffffff;
+    height: 1px;
+}
+
+
+/*============================================================= intro ============================================================*/
+/* โครงสร้างพื้นฐาน */
+.introMainWeb {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    z-index: 2000;
+}
+
+/* แอนิเมชั่นของคลื่น */
+.introAnimation .wave {
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, rgba(0, 119, 255, 0.5), rgba(0, 255, 204, 0.5), rgba(255, 0, 255, 0.5));
+    animation: waveMove 2s infinite ease-in-out;
+}
+
+/* การเคลื่อนไหวของคลื่น */
+@keyframes waveMove {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+/* สไตล์ข้อความเมื่อการโหลดเสร็จสิ้น */
+.introContent .finalText {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+/* แอนิเมชั่นของข้อความ */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* เพิ่มพื้นหลังที่มีเอฟเฟกต์ */
+.introMainWeb {
+    background: radial-gradient(circle, rgba(0, 119, 255, 0.7), rgba(0, 0, 0, 0.7));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* สไตล์ข้อความการโหลด */
+.introMainWeb p {
+    position: fixed;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    font-size: 30px;
+    font-family: 'Dongle', sans-serif;
+    visibility: hidden;
+    animation-duration: 2s;
+    animation-name: introMainWeb4;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes introMainWeb4 {
+    0% {
+        visibility: visible;
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+/*========================================================= profile ============================================*/
+.back {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: #00000016;
+    z-index: 1001;
+    backdrop-filter: blur(2px);
+    animation: back 1s ease-in-out ;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.back.fade-in{
+    opacity: 1;
+    visibility: visible;
+}
+.back.fade-out{
+    opacity: 0;
+    visibility: hidden;
+}
+@keyframes back{0%{opacity: 0;}}
+
+
+.ProfileContaner{
+    position: fixed;
+    text-align: center;
+    top: 10%;
+    right: 20px;
+    width: 410px;
+    height: 620px;
+    background-color: #ffffff;
+    
+    box-shadow: 0 0 15px #00000063;
+    z-index: 1010;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.ProfileContaner.fade-in{
+    animation: ProfileContaner 0.5s ease-in-out forwards;
+    visibility: visible;
+}
+
+.ProfileContaner.fade-out{
+    animation: ProfileContanerOut 0.5s ease-in-out  reverse forwards;
+    visibility: hidden;
+}
+@keyframes ProfileContaner{
+    0%{
+        top: 10%;
+        right: -500px;
+    }80%{
+        top: 10%;
+        right: 50px;
+    }100%{
+        top: 10%;
+        right: 20px;
+    }
+}
+@keyframes ProfileContanerOut{
+    0%{
+        top: 10%;
+        right: -500px;
+    }80%{
+        top: 10%;
+        right: 50px;
+    }100%{
+        top: 10%;
+        right: 20px;
+    }
+}
+
+
+
+
+
+.ProfileContaner div:nth-child(1) img{
+    width: 100%;
+    height: 225px;
+    
+    box-shadow: 0 5px 10px #00000067;
+}
+.ProfileContaner div:nth-child(2) img{
+    width: 250px;
+    height: 250px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background-color: #eeeeee;
+    border: 5px solid #ffffff;
+    box-shadow: 0 0 10px #00000067;
+    animation: ProfileContaner2 5s ease-in-out infinite ;
+}
+@keyframes ProfileContaner2{
+    0%{
+        transform: translateY(-50%);
+    }50%{
+        transform: translateY(-48%);
+    }100%{
+        transform: translateY(-50%);
+    }
+}
+.ProfileContaner div:nth-child(3){
+    text-align: center;
+    background-color: #00bbf0;
+    width: auto;
+    height: auto;
+    padding: 5px 10px;
+    border-radius: 20px;
+    position: absolute;
+    top: 330px;
+    right: 120px;
+    box-shadow: 0 5px 10px #00000067;
+    text-shadow: 0 5px 10px #00000067;
+    animation: ProfileContaner3 3s ease-in-out infinite ;
+}
+@keyframes ProfileContaner3{
+    0%{
+        
+    }25%{
+        rotate: 10deg;
+    }75%{
+        rotate: -10deg;
+    }100%{
+        
+    }
+}
+.ProfileContaner div:nth-child(4){
+    font-size: 80px;
+    font-weight: bold;
+    font-family: 'Dongle', sans-serif;
+    transform: translateY(-130%);
+    text-shadow: 0 5px 5px #0000004b;
+    color: #000000;
+}
+.ProfileContaner div:nth-child(5){
+    font-size: 30px;
+    font-family: 'Dongle', sans-serif;
+    transform: translateY(-420%);
+    color: #000000;
+}
+.ProfileContaner div:nth-child(6){
+    font-size: 30px;
+    font-family: 'Dongle', sans-serif;
+    transform: translateY(-420%);
+    color: #000000;
+}
+.ProfileContaner div:nth-child(7){
+    font-size: 30px;
+    font-family: 'Dongle', sans-serif;
+    transform: translateY(-420%);
+    color: #000000;
+}
+.ProfileContaner div:nth-child(8){
+    font-size: 30px;
+    font-family: 'Dongle', sans-serif;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #0000006b;
+    cursor: pointer;
+    animation: ProfileContaner8 3s ease-in-out infinite ;
+}
+@keyframes ProfileContaner8{
+    0%{
+        
+    }40%{
+        right: 10px;
+    }50%{
+        right: 15px;
+    }60%{
+        right: 10px;
+    }100%{
+        
+    }
+}
+.ProfileContaner div:nth-child(9){
+    font-size: 30px;
+    font-family: 'Dongle', sans-serif;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-shadow: 0 0 10px #0000008b;
+    cursor: pointer;
+    animation: ProfileContaner9 3s ease-in-out infinite ;
+}
+@keyframes ProfileContaner9{
+    0%{
+        
+    }25%{
+        rotate: 10deg;
+    }75%{
+        rotate: -10deg;
+    }100%{
+        
+    }
+}
+.ProfileContaner div:nth-child(10){
+    font-size: 30px;
+    font-family: 'Dongle', sans-serif;
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    border-radius: 0 10px 10px 0;
+    padding-right: 10px;
+    padding-left: 5px;
+    background-color: #f7e19b;
+    text-align: center;
+    color: #322300;
+    box-shadow: 0 0 10px #ffdb64;
+    cursor: pointer;
+}
+.ProfileContaner div:nth-child(11){
+    font-size: 16px;
+    font-family: 'Dongle', sans-serif;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #ffffff;
+    border-radius: 0 0 15px 15px;
+    background-color: #000000;
+    text-align: center;
+    cursor: pointer;
+}
+.ProfileContaner div:nth-child(12){
+    font-size: 30px;
+    font-family: 'Dongle', sans-serif;
+    position: absolute;
+    top: 90px;
+    left: 0px;
+    border-radius: 0 10px 10px 0;
+    padding-right: 10px;
+    padding-left: 5px;
+    background-color: #f7e19b;
+    text-align: center;
+    color: #000000;
+    box-shadow: 0 0 10px #ffdb64;
+    cursor: pointer;
+}
+
+
+
+/*=============================================================Edit profile=============================*/
+.EditProfileContaner{
+    position: fixed;
+    text-align: left;
+    top: 10%;
+    right: 20px;
+    width: 500px;
+    height: 700px;
+    backdrop-filter: blur(45px);
+    
+    z-index: 1010;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.EditProfileContaner input{
+    border-radius: 20px;
+    padding: 5px;
+    border: 2px solid #24292E;
+    height: 23px;
+
+}
+
+.EditProfileContaner label{
+    
+}
+
+.EditProfileContaner.fade-in{
+    animation: EditProfileContaner 0.3s ease-in-out forwards;
+    visibility: visible;
+}
+
+.EditProfileContaner.fade-out{
+    animation: EditProfileContanerOut 0.3s ease-in-out  reverse forwards;
+    visibility: hidden;
+}
+@keyframes EditProfileContaner{
+    0%{
+        opacity: 0;
+        scale: 0.3;
+    }
+}
+@keyframes EditProfileContanerOut{
+    0%{
+        opacity: 0;
+        scale: 0.3;
+    }
+}
+.EditContaner{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 450px;
+    height: 650px;
+    padding: 10px;
+  
+    backdrop-filter: blur(45px);
+    background-color: #ffffffb7;
+}
+.EditBtn {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    text-shadow: 3px 5px 2px #969696;
+}
+.uploadEdit {
+    display: flex;
+    justify-content: space-between;
+}
+.Editsubmit{
+    margin: 40px 100px;
+    border: 2px solid #24292E;
+   
+    padding: 0px;
+    background-color: #00BBF0;
+    font-family: 'Dongle', sans-serif;
+    font-size: 35px;
+}
+
+/* ======================================================tax======================================================== */
+.TaxContaner{
+    position: fixed;
+    text-align: left;
+    top: 10%;
+    right: 20px;
+    width: 500px;
+    height: 700px;
+    backdrop-filter: blur(45px);
+    border-radius: 15px;
+    z-index: 1030;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.TaxContannersub{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 450px;
+    height: 650px;
+    padding: 10px;
+    border-radius: 10px;
+    backdrop-filter: blur(45px);
+    background-color: #ffffffb7;
+}
+.TaxContannersub textarea{
+    width: 100%;
+    max-height: 50px;
+}
+.TaxContannersub img{
+    width: 160px;
+}
+.Taxsubmit{
+    padding: 0px 20px;
+    font-family: 'Dongle', sans-serif;
+    font-size: 20px;
+    background-color: #C9AF62;
+    border-color: #ffffff;
+}
+.TaxContaner.fade-in{
+    visibility: visible;
+    opacity: 1;
+    animation: TaxContanerin 0.2s ease-in forwards;
+}
+.TaxContaner.fade-out{
+    visibility: hidden;
+    opacity: 0;
+    animation: TaxContanerout 0.2s ease-in-out reverse forwards;
+}
+@keyframes TaxContanerin {
+    0%{
+        scale: 0.4;
+    }
+}
+@keyframes TaxContanerout {
+    0%{
+        scale: 0.4;
+    }
+}
+.closeTax{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    background-color: brown;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 5px 5px #00000048;
+}
+
+/* พื้นหลัง */
+.introMainWeb {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, #1d3557, #457b9d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+/* แอนิเมชันวงกลม */
+.introAnimation {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    animation: circleExpand 5s ease-in-out forwards;
+}
+
+.wave {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: #fff;
+    animation: pulse 2.5s ease-in-out infinite;
+}
+
+/* ข้อความตอนจบ */
+.introContent {
+    animation: fadeIn 2s ease-in-out forwards;
+    text-align: center;
+}
+
+.finalText {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* แอนิเมชัน */
+@keyframes circleExpand {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(10);
+        opacity: 0;
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.5);
+        opacity: 0.5;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
